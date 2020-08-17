@@ -1,351 +1,179 @@
-<!DOCTYPE html>
-
-<html lang="en" class="no-js">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Pennapa Poopong</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>ใบสั่ง</title>
 
-    <!-- GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
-    <!-- PAGE LEVEL PLUGIN STYLES -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- THEME STYLES -->
-    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
 </head>
-<!-- END HEAD -->
 
-<!-- BODY -->
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <i class="fas fa-car-crash fa-10x test-success"></i>
+            <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+            <p class="lead">Traffic Ticket issued by Traffic Officers oompetent Officials</p>
+            <p class="lead"> Issuing place Meajo Police Station</p>
+        </div>
 
-<body id="body" data-spy="scroll" data-target=".header">
-
-    <!--========== HEADER ==========-->
-    <header class="header navbar-fixed-top">
-        <!-- Navbar -->
-        <nav class="navbar" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="menu-container js_nav-item">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Pennapa  Poopong</span>
-                            <span class="toggle-icon"></span>
-                        </button>
-
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse nav-collapse">
-                    <div class="menu-container">
-                        <ul class="nav navbar-nav navbar-nav-right">
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Navbar Collapse -->
-            </div>
-        </nav>
-        <!-- Navbar -->
-    </header>
-    <!--========== END HEADER ==========-->
-
-    <!--========== SLIDER ==========-->
-    <div class="promo-block">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 sm-margin-b-60">
-                    <div class="margin-b-30">
-                        <h1 class="promo-block-title"> PENNAPA<br/> POOPONG</h1>
-                        <p class="promo-block-text">สาขาวิทยาการคอมพิวเตอร์&amp; รหัส 6004101362</p>
-                    </div>
-                    <ul class="list-inline">
-                        <li><a href="#" class="social-icons"><i class="icon-social-facebook"></i></a></li>
-                        <li><a href="#" class="social-icons"><i class="icon-social-twitter"></i></a></li>
-                        <li><a href="#" class="social-icons"><i class="icon-social-dribbble"></i></a></li>
-                        <li><a href="#" class="social-icons"><i class="icon-social-behance"></i></a></li>
-                        <li><a href="#" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
-                    </ul>
+
+            <form class="needs-validation">
+                <b>เลขที่ <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"></b>
+                <b>รหัส <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"></b>
+                <div class="mb-3">
+                    <label>ประเภทรถ</label> &nbsp;
+                    <input type="radio" name="drive" required /> รถจักรยานยนต์ &nbsp;
+                    <input type="radio" name="drive" required /> รถยนต์นั่งส่วนบุคคล &nbsp;
+                    <input type="radio" name="drive" required /> รถประเภทอื่น &nbsp;
+                    <input type="radio" name="drive" required /> รถขนส่ง &nbsp;
                 </div>
-                <div class="col-sm-6">
-                    <div class="promo-block-img-wrap">
-                        <img class="promo-block-img img-responsive" src="img/mockup/fernly3.jpg.jpg" align="fernly3">
-                    </div>
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-    </div>
-    <!--========== SLIDER ==========-->
-
-    <!--========== PAGE LAYOUT ==========-->
-    <!-- About -->
-    <div id="about">
-        <div class="container content-lg">
-            <div class="row">
-                <div class="col-sm-5 sm-margin-b-60">
-                    <img class="full-width img-responsive" src="img/500x700/fernly2.jpg.jpg" alt="Image">
-                </div>
-                <div class="col-sm-7">
-                    <div class="section-seperator margin-b-50">
-                        <div class="margin-b-50">
-                            <div class="margin-b-30">
-                                <h2>About Me</h2>
-                                <p>I'm Pennapa Poopong,House No. 44/2 Moo 3, Tambon Rao Ton Chan, Amphur Si Samrong, Sukhothai 64120</p>
-                            </div>
-                            <a href="#" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Download my CV</a>
-                        </div>
-                    </div>
-
-                    <h2>My Skills</h2>
-                    <!-- Progress Box -->
-                    <div class="progress-box">
-                        <h5>Adobe Illustrator <span class="color-heading pull-right">87%</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="87"></div>
-                        </div>
-                    </div>
-                    <div class="progress-box">
-                        <h5>Adobe Photoshop <span class="color-heading pull-right">96%</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="96"></div>
-                        </div>
-                    </div>
-                    <div class="progress-box">
-                        <h5>Graphic Design <span class="color-heading pull-right">77%</span></h5>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="77"></div>
-                        </div>
-                    </div>
-                    <!-- End Progress Box -->
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-    </div>
-    <!-- End About -->
-
-    <!-- Experience -->
-    <div id="experience">
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="container content-lg">
-                <div class="row row-space-2 margin-b-4">
-                    <div class="col-md-3 col-sm-6 md-margin-b-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-mustache"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Illustrator</h3>
-
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 md-margin-b-4">
-                        <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                            <div class="service-element">
-                                <i class="service-icon color-white icon-screen-tablet"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3 class="color-white">Graphic Design</h3>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 sm-margin-b-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-chemistry"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Photoshop</h3>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-badge"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Sketch</h3>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-    </div>
-    <!-- End Experience -->
-
-    <!-- Work -->
-    <div id="work">
-        <div class="container content-lg">
-            <div class="row margin-b-40">
-                <div class="col-sm-6">
-                    <h2>รูปภาพ</h2>
-                    <p>Your future is created by what you do today not tomorrow.</p>
-                </div>
-            </div>
-            <!--// end row -->
-
-            <div class="row">
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/01 (1).jpg" alt="Latest Products Image">
-                        </div>
-                    </div>
-                </div>
-                <!-- End Latest Products -->
-
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
-                        </div>
-                    </div>
-                </div>
-                <!-- End Latest Products -->
-
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
-                        </div>
-                    </div>
-                </div>
-                <!-- End Latest Products -->
-            </div>
-            <!--// end row -->
-        </div>
-    </div>
-    <!-- End Work -->
-
-    <!-- Clients -->
-    <div class="bg-color-sky-light">
-        <div class="content-lg container">
-            <!-- Swiper Clients -->
-            <div class="swiper-slider swiper-clients">
-                <!-- Swiper Wrapper -->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="img/clients/01.png" alt="Clients Logo">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="img/clients/02.png" alt="Clients Logo">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="img/clients/03.png" alt="Clients Logo">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="img/clients/04.png" alt="Clients Logo">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="img/clients/05.png" alt="Clients Logo">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="img/clients/06.png" alt="Clients Logo">
-                    </div>
-                </div>
-                <!-- End Swiper Wrapper -->
-            </div>
-            <!-- End Swiper Clients -->
-        </div>
-    </div>
-    <!-- End Clients -->
-
-    <!-- Promo Banner -->
-    <div class="promo-banner parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
-        <div class="container-sm content-lg">
-            <h2 class="promo-banner-title">FERN</h2>
-        </div>
-    </div>
-    <!-- End Promo Banner -->
-
-    <!-- Contact -->
-    <div id="contact">
-        <div class="bg-color-sky-light">
-            <div class="container content-lg">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>Contact Me</h2>
-                    </div>
-                </div>
-                <!--// end row -->
-
+                <b>หมายเลขทะเบียนรถ<input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"></b><br><br>
+                <b>ชื่อผู้ขับขี่<input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"></b><br><br>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6 md-margin-b-30">
-                        <h4>Location</h4>
-                        <a href="#">Sukhothai</a>
-                    </div>
-                    <div class="col-md-3 col-xs-6 md-margin-b-30">
-                        <h4>Phone</h4>
-                        <a href="#">0631140335</a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h4>Email</h4>
-                        <a href="mailto:#">pennapafern101@gmail.com</a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h4>Web</h4>
-                        <a href="#">pennapafern101.com</a>
+                    <label>ยี่ห้อรถ:<input type="text" id="fname" name="Vehicle registration" size="90" style="border: none; border-bottom-style:groove;"></label>
+                    <div class="mb-3">
+                        <br><input type="radio" name="drive" required /> กรุงเทพ &nbsp;
+                        <input type="radio" name="drive" required /> จังหวัด <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"><br>
                     </div>
                 </div>
-                <!--// end row -->
-            </div>
         </div>
+
+        <div class="mb-3">
+            <label>ป้ายทะเบียนสี</label> &nbsp;
+            <input type="radio" name="drive" required /> ขาว &nbsp;
+            <input type="radio" name="drive" required /> เหลือง &nbsp;
+            <input type="radio" name="drive" required /> เขียว &nbsp;
+            <input type="radio" name="drive" required /> แดง &nbsp;
+            <input type="radio" name="drive" required /> ฟ้า &nbsp;
+            <input type="radio" name="drive" required /> อื่นๆ : <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"><br>
+        </div>
+
+        <div class="mb-3">
+            <p>การกระทำผิด</p>
+            <label>๑. ขับรถ</label> <br>
+            <input type="checkbox" name="drive" required /> ฝ่าฝืนสัญญาณไฟจราจรสีแดง &nbsp;
+            <input type="checkbox" name="drive" required /> ฝ่าฝืนเครื่องหมายบนพื้นทาง &nbsp;
+            <input type="checkbox" name="drive" required /> ฝ่าฝืนเครื่องหมายจราจรห้าม : <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"><br>
+            <input type="checkbox" name="drive" required /> ในลักษณะกีดขวางการจราจร &nbsp;
+            <input type="checkbox" name="drive" required /> ไม่ใกล้ขอบทางเดินรถด้านซ้าย &nbsp;
+            <input type="checkbox" name="drive" required /> แซงเมื่อเข้าที่คับขัน
+            <br><br>
+            <label>๒. หยุดรถ</label> <br>
+            <input type="checkbox" name="drive" required /> ในลักษณะกีดขวางการจราจร &nbsp;
+            <input type="checkbox" name="drive" required /> ในเขตห้ามหยุด &nbsp;
+            <input type="checkbox" name="drive" required /> รอสัญญาณล้ำแนว &nbsp;
+            <br><br>
+            <label>๓. จอดรถไว้</label> <br>
+            <input type="checkbox" name="drive" required /> ในลักษณะกีดขวางการจราจร &nbsp;
+            <input type="checkbox" name="drive" required /> บนทางเท้า &nbsp;
+            <input type="checkbox" name="drive" required /> ในเขตห้ามจอด : <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"><br>
+            <input type="checkbox" name="drive" required /> ไม่ชิดขอบทางด้สนซ้าย &nbsp;
+            <input type="checkbox" name="drive" required /> ไม่ขนานชิดขอบทาง &nbsp;
+            <input type="checkbox" name="drive" required /> ซ้อนคัน
+        </div>
+        <br>
+        <label>๔. อื่นๆ : <input type="text" id="fname" name="Vehicle registration" size="100" style="border: none; border-bottom-style:groove;"></label>
+        <br><br>
+        <center>
+            <label>เมื่อวันที่ <input type="text" id="fname" name="Vehicle registration" size="1" style="border: none; border-bottom-style:groove;">
+          เดือน <input type="text" id="fname" name="Vehicle registration" size="5" style="border: none; border-bottom-style:groove;">
+          พ.ศ. <input type="text" id="fname" name="Vehicle registration" size="2" style="border: none; border-bottom-style:groove;">
+          เวลา <input type="text" id="fname" name="Vehicle registration" size="2" style="border: none; border-bottom-style:groove;"> น.
+         </label>
+        </center>
+
+
+        <p>ลงชื่อผู้ออกใบสั่ง</p>
+        <label>ยศ <input type="text" id="fname" name="Vehicle registration" size="5" style="border: none; border-bottom-style:groove;"></label>
+        <label>ชื่อ <input type="text" id="fname" name="Vehicle registration" size="20" style="border: none; border-bottom-style:groove;"></label>
+        <label>ชื่อสกุล <input type="text" id="fname" name="Vehicle registration" size="20" style="border: none; border-bottom-style:groove;"></label>
+        <p></p><input type="radio" name="drive" required /> เจ้าพนักงานจราจร &nbsp;
+        <input type="radio" name="drive" required /> พนักงานเจ้าหน้าที่ รหัส <input type="text" id="fname" name="Vehicle registration" size="10" style="border: none; border-bottom-style:groove;">
+
+        <div class="py-5 text-center">
+            <b>ใบรับแทนใบอนุญาตขับขี่</b>
+            <p>Substityte of the Driver's License</p>
+        </div>
+        <label>ชื่อผู้ขับขี่ <input type="text" id="fname" name="Vehicle registration" size="30" style="border: none; border-bottom-style:groove;"></label>
+        <label>เลขประจำตัวประชาชน <input type="text" id="fname" name="Vehicle registration" size="15" style="border: none; border-bottom-style:groove;"></label>
+        <br>
+        <label>ใบอนุญาตขับขี่เลขที่/ฉบับที่ <input type="text" id="fname" name="Vehicle registration" size="15" style="border: none; border-bottom-style:groove;"></label>
+        <label>วันอนุญาต <input type="text" id="fname" name="Vehicle registration" size="15" style="border: none; border-bottom-style:groove;"></label>
+        <br>
+        <label>ออกให้โดยนายทะเบียน &nbsp;
+          <input type="radio" name="drive" required /> กรุงเทพมหานคร &nbsp; สาขา<input type="text" id="fname" name="Vehicle registration" size="10" style="border: none; border-bottom-style:groove;">&nbsp;
+          <input type="radio" name="drive" required /> จังหวัด <input type="text" id="fname" name="Vehicle registration" size="10" style="border: none; border-bottom-style:groove;">
+          สาขา<input type="text" id="fname" name="Vehicle registration" size="10" style="border: none; border-bottom-style:groove;">
+        </label>
+
+        <div class="mb-3">
+            <label>ใบขับขี่</label> &nbsp;
+            <input type="radio" name="drive" required /> รถจักรยายนต์ &nbsp;
+            <input type="radio" name="drive" required /> รถสามล้อ &nbsp;
+            <input type="radio" name="drive" required /> รถยนต์ &nbsp;
+            <input type="radio" name="drive" required /> อื่นๆ : <input type="text" id="fname" name="Vehicle registration" style="border: none; border-bottom-style:groove;"><br>
+        </div>
+
+        <div class="mb-3">
+            <label>ชนิด</label> &nbsp;
+            <input type="radio" name="drive" required /> ชั่วคราว &nbsp;
+            <input type="radio" name="drive" required /> ตลอดชีพ &nbsp;
+            <input type="radio" name="drive" required /> สาธารณะ &nbsp;
+            <input type="radio" name="drive" required /> บุคคล ชนิดที่ &nbsp;
+            <input type="radio" name="drive" required /> ทุกประเภท ชนิดที่ &nbsp;
+            <input type="radio" name="drive" required /> ระหว่างประเทศ <br>
+        </div>
+
+        <p>ลงชื่อผู้ออกใบสั่ง</p>
+        <label>ยศ <input type="text" id="fname" name="Vehicle registration" size="5" style="border: none; border-bottom-style:groove;"></label>
+        <label>ชื่อ <input type="text" id="fname" name="Vehicle registration" size="20" style="border: none; border-bottom-style:groove;"></label>
+        <label>ชื่อสกุล <input type="text" id="fname" name="Vehicle registration" size="20" style="border: none; border-bottom-style:groove;"></label>
+        <p></p><input type="radio" name="drive" required /> เจ้าพนักงานจราจร &nbsp;
+        <input type="radio" name="drive" required /> พนักงานเจ้าหน้าที่ รหัส <input type="text" id="fname" name="Vehicle registration" size="10" style="border: none; border-bottom-style:groove;">
+
+        <center>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg " type="submit">ตกลง</button>
+        </center>
+        <br>
+        </form>
     </div>
-    <!-- End Contact -->
-    <!--========== END PAGE LAYOUT ==========-->
+    </div>
 
-
-    <!-- Back To Top -->
-    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
-
-    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-    <!-- CORE PLUGINS -->
-    <script src="vendor/jquery.min.js" type="text/javascript"></script>
-    <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <!-- PAGE LEVEL PLUGINS -->
-    <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-    <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-    <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-    <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-    <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
-    <script src="vendor/jquery.appear.js" type="text/javascript"></script>
-    <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
-
-    <!-- PAGE LEVEL SCRIPTS -->
-    <script src="js/layout.min.js" type="text/javascript"></script>
-    <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
-    <script src="js/components/swiper.min.js" type="text/javascript"></script>
-    <script src="js/components/wow.min.js" type="text/javascript"></script>
-
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
-<!-- END BODY -->
 
 </html>
